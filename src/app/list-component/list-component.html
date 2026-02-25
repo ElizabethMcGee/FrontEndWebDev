@@ -1,0 +1,17 @@
+<h2>Presidents</h2>
+<!--
+Unordered list
+<ul>
+    <li *ngFor="let x of presidents">
+        {{x}}
+    </li>
+</ul> -->
+
+<!--Unordered list-->
+<ul>
+    <!--Display list of presidents-->
+    @for(x of presidents; track x){
+        <!--Display Name then term length-->
+        <li>{{x.name}} {{x.term}}</li>
+    }
+</ul>
